@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #4d46a6;
+  overflow-y: scroll;
+}
+
+.main-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(400px, 90%);
+  height: 500px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btns-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.navigate-btn {
+  margin: 0 5px;
+  height: 40px;
+  flex: 1;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigate-btn-selected {
+  background-color: rgb(8, 145, 110);
+  color: white;
+}
+
+.info-container {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+#pkg-name {
+  color: #5a5a5a;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  margin-bottom: 10px;
+}
+
+.info-master {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.title-and-price {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#description {
+  margin-bottom: 20px;
+  line-height: 1.3rem;
+  height: 3.9rem;
+  min-height: 3.9rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.features-container {
+  height: 100px;
+  min-height: 100px;
+  margin-bottom: 20px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.check-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0dff6;
+}
+
+.check-circle img {
+  width: 15px;
+  height: 15px;
+}
+
+.feature p {
+  color: rgb(105, 105, 105);
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
+#add-to-cart-btn {
+  width: 200px;
+  margin: 10px 0;
+  align-self: center;
+  padding: 10px;
+  background-color: #4d46a6;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#add-to-cart-btn:hover {
+  background-color: #6760c9;
+}
+
+@media only screen and (max-width: 378px) {
+  #pkg-name {
+    font-size: 0.7rem;
+  }
+
+  #description {
+    font-size: 0.7rem;
+  }
+
+  .info-container {
+    padding: 40px 20px;
+  }
+}
